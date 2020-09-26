@@ -13,3 +13,5 @@ namespace foo {
 using F = int(double*);
 constexpr auto f = mangled::name<F>([]{ return "foo::bar::frobnicate"; });
 ````
+
+Note that the string must not contain whitespace or the global namespace qualifier.
